@@ -1,56 +1,64 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-<style>
-body{
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: 100%;
-	background-image:url(images/bg-1_e29bcfa.jpg);
-}
-.fly{
-	margin:100px 500px;
-	animation:move1 1s infinite;
-}
-.fly img{
-	display: block;
-	width: 60px;
-	height: auto;
-}
-.next{
-	position: absolute;
-	bottom: 200px;
-	left: 50%;
-	animation:move2 1s infinite alternate;
-
-}
-.next img{
-	display:block;
-	width: 30px;
-	height: auto;
-}
-@keyframes move1{
-	100%{
-		transform:translateX(500px);
-	}
-}
-@keyframes move2{
-	100%{
-		transform:translateY(50px);
-		opacity: 0;
-	}
-}
-</style>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/wheel.js"></script>
 </head>
 <body>
-	<div class="fly">
-		<img src="images/flight_ade8ee2.png" alt="">
-	</div>
-	<div class="next">
-		<img src="images/arrow_aad9b25.png" alt="">
-	</div>
+<div class="out">
+    <div class="menu-box">
+        <div class="menu">
+            <div class="menu-l">
+                <a href="#"class="logo"></a>
+                <div class="shou">
+                    <a href="#">首页</a>
+                    <a href="#">产品介绍</a>
+                    <a href="#">用户版</a>
+                </div>
+            </div>
+            <div class="menu-r">
+                <a href="#">手机客户端</a>
+                <a href="#">百度司南</a>
+                <a href="#">联系我们</a>
+                <a href="#">申请试用</a>
+            </div>
+        </div>
+        <div class="xs">
+            <a href="#"class="logo"></a>
+            <span class="tiao">
+                三
+            </span>
+        </div>
+    </div>
+    <div class="box">
+        <div class="inner1">
+            <div class="imgs">
+                <img src="images/flight_ade8ee2.png" alt="">
+                <img src="images/launch_deea86c.png" alt="">
+                <img src="images/ship_1ad6734.png" alt="">
+                <img src="images/hill_1_0d79217.png" alt="">
+                <img src="images/hill_2_540422f.png" alt="">
+                <img src="images/hill_3_ace39fb.png" alt="">
+                <img src="images/cloud_1_1d4924b.png" alt="">
+                <img src="images/cloud_2_a186193.png" alt="">
+                <img src="images/cloud_3_5ee0340.png" alt="">
+            </div>
+
+            <div class="next"><img src="images/arrow_aad9b25.png" alt=""></div>
+        </div>
+        <div class="inner2">
+            <div class="imgs">
+                <img src="images/h_lingxian_221f2d8.png" alt="">
+                <img src="images/brain_36a156f.png" alt="">
+            </div>
+        </div>
+        <div class="inner3"></div>
+        <div class="inner4"></div>
+    </div>
+</div>
+
 </body>
 </html>
