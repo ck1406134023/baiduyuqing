@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<style>
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background-image:url(images/bg-1_e29bcfa.jpg);
+}
+.fly{
+	margin:100px 500px;
+	animation:move1 1s infinite;
+}
+.fly img{
+	display: block;
+	width: 60px;
+	height: auto;
+}
+.next{
+	position: absolute;
+	bottom: 200px;
+	left: 50%;
+	animation:move2 1s infinite alternate;
+
+}
+.next img{
+	display:block;
+	width: 30px;
+	height: auto;
+}
+@keyframes move1{
+	100%{
+		transform:translateX(500px);
+	}
+}
+@keyframes move2{
+	100%{
+		transform:translateY(50px);
+		opacity: 0;
+	}
+}
+</style>
+</head>
+<body>
+	<div class="fly">
+		<img src="images/flight_ade8ee2.png" alt="">
+	</div>
+	<div class="next">
+		<img src="images/arrow_aad9b25.png" alt="">
+	</div>
+</body>
+</html>
